@@ -16,8 +16,7 @@ def process(rows):
     df = pd.DataFrame(rows)
 
 
-    python_test1_df = apple_screentime_csv_tables_bespin_2024_03_08T18___47___06_05___00_ZOBJECT_df.drop(find_empty_columns(apple_screentime_csv_tables_bespin_2024_03_08T18___47___06_05___00_ZOBJECT_df),
-            axis=1)
+    python_test1_df = df.drop(find_empty_columns(df), axis=1)
     # python_test1_df.dropna(thresh=2, axis=1, inplace=True)
 
     for col in python_test1_df:
