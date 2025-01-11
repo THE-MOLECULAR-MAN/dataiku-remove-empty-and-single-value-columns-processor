@@ -5,7 +5,7 @@
 # the step parameters are passed as a params dict
 
 # Define here a function that returns the result of the step.
-def process(row):
+def process(rows):
     # row is a dict of the row on which the step is applied
 
-    return len(row)
+    return len(rows)
