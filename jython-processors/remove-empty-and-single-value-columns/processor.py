@@ -15,8 +15,6 @@ def find_empty_columns(df):
 def process(rows):
     # row is a dict of the row on which the step is applied
     
-
-    
     df = pd.DataFrame(rows)
 
 
