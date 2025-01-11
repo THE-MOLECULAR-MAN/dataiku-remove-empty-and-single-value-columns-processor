@@ -2,6 +2,11 @@
 
 import pandas as pd
 
+def find_empty_columns(df):
+    """x"""
+    return [col for col in df.columns if df[col].isnull().all()]
+
+
 # global- and project-level variables are passed as a dss_variables dict
 
 # the step parameters are passed as a params dict
@@ -11,9 +16,6 @@ def process(rows):
     # row is a dict of the row on which the step is applied
     
 
-    def find_empty_columns(df):
-        """x"""
-        return [col for col in df.columns if df[col].isnull().all()]
     
     df = pd.DataFrame(rows)
 
