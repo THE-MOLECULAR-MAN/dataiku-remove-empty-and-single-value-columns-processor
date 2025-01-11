@@ -17,7 +17,6 @@ def process(rows):
     
     df = pd.DataFrame(rows)
 
-
     df_output = df.drop(find_empty_columns(df), axis=1)
 
     for col in df_output:
