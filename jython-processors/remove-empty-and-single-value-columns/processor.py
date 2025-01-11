@@ -16,13 +16,10 @@ def process(rows):
     df = pd.DataFrame(rows)
 
 
-    python_test1_df = df.drop(find_empty_columns(df), axis=1)
-    # python_test1_df.dropna(thresh=2, axis=1, inplace=True)
+    df_output = df.drop(find_empty_columns(df), axis=1)
 
-    for col in python_test1_df:
-        if(len(python_test1_df.loc[:,col].unique()) < 2):
-            python_test1_df.pop(col)
+    for col in df_output:
+        if(len(df_output.loc[:,col].unique()) < 2):
+            df_output.pop(col)
 
-    
-    
-    return str(type(rows))
+    return df_output
