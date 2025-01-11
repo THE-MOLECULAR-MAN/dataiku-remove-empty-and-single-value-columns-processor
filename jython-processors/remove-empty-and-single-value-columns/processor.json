@@ -31,9 +31,9 @@
     "params": [
         {
             "name": "remove_empty_columns",
-            "label": "",
+            "label": "Remove columns that have are all null/empty values",
             "type": "BOOLEAN",
-            "description": "Remove columns that have are all null/empty values",
+            "description": "",
             "mandatory": false
         },
         {
