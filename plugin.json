@@ -3,7 +3,7 @@
     "id": "remove-empty-and-single-value-columns-processor",
 
     // It is highly recommended to use Semantic Versioning
-    "version": "0.0.1",
+    "version": "0.1.1",
 
     // Meta data for display purposes:
     "meta": {
@@ -11,7 +11,7 @@
         "label": "Remove empty and single value columns processor",
 
         // description: longer string to help end users understand what this plugin does
-        "description": "Longer description",
+        "description": "TBD",
 
         "author": "Tim H",
 
