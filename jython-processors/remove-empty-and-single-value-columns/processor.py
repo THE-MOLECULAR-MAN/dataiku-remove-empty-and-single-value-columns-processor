@@ -1,5 +1,7 @@
 # This file is the actual code for the custom Jython step remove-empty-and-single-value-columns
 
+import pandas as pd
+
 # global- and project-level variables are passed as a dss_variables dict
 
 # the step parameters are passed as a params dict
@@ -22,4 +24,4 @@ def process(rows):
         if(len(df_output.loc[:,col].unique()) < 2):
             df_output.pop(col)
 
-    return df_output
+    return df_output.to_dict()
