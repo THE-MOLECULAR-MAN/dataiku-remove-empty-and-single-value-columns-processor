@@ -42,7 +42,8 @@
             "label": "Remove columns with only one value",
             "type": "BOOLEAN",
             "description": "Enabled",
-            "mandatory": false
+            "mandatory": false,
+            "defaultValue": false
         }
     ]
 }
