@@ -31,16 +31,16 @@
     "params": [
         {
             "name": "remove_empty_columns",
-            "label": "Remove columns that have are all null/empty values",
+            "label": "Remove empty columns",
             "type": "BOOLEAN",
-            "description": "TBD",
+            "description": "Remove columns that have are all null/empty values",
             "mandatory": false
         },
         {
             "name": "remove_columns_with_only_one_value",
             "label": "Remove columns with only one value",
             "type": "BOOLEAN",
-            "description": "TBD",
+            "description": "Enabled",
             "mandatory": false
         }
     ]
