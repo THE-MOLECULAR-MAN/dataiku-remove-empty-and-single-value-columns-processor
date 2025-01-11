@@ -33,14 +33,14 @@
             "name": "remove_empty_columns",
             "label": "Remove columns that have are all null/empty values",
             "type": "BOOLEAN",
-            "description": "",
+            "description": "Enabled",
             "mandatory": false
         },
         {
             "name": "remove_columns_with_only_one_value",
-            "label": "",
+            "label": "Remove columns with only one value",
             "type": "BOOLEAN",
-            "description": "Remove columns with only one value",
+            "description": "Enabled",
             "mandatory": false
         }
     ]
