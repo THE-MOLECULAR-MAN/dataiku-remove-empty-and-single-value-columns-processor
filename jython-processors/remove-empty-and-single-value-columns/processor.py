@@ -2,7 +2,6 @@
 
 import logging
 
-
 logger = logging.getLogger(__name__)
 logging.basicConfig(level=logging.INFO,
                     format='remove-empty-and-single-value-columns-processor plugin %(levelname)s - %(message)s')
