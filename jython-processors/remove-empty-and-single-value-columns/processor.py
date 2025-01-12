@@ -25,7 +25,6 @@ def process(rows):
         """x"""
         return [col for col in df.columns if df[col].isnull().all()]
     
-    row is a dict of the row on which the step is applied
     logger.info("======================== about to reference pandas ==============================")
     df = pd.DataFrame(rows)
     logger.info("======================== past pandas reference ==============================")
