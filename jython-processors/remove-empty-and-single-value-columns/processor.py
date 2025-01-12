@@ -1,7 +1,7 @@
 # This file is the actual code for the custom Jython step remove-empty-and-single-value-columns
 
 import logging
-import pandas
+
 
 logger = logging.getLogger(__name__)
 logging.basicConfig(level=logging.INFO,
@@ -10,6 +10,7 @@ logging.basicConfig(level=logging.INFO,
 remove_empty_columns               = params.get('remove_empty_columns')
 remove_columns_with_only_one_value = params.get('remove_columns_with_only_one_value')
 
+import pandas
 
 # global- and project-level variables are passed as a dss_variables dict
 
@@ -17,7 +18,7 @@ remove_columns_with_only_one_value = params.get('remove_columns_with_only_one_va
 
 # Define here a function that returns the result of the step.
 def process(rows):
-    logging.info("======================== process start ==============================")
+    logger.info("======================== process start ==============================")
 
     def find_empty_columns(df):
         """x"""
@@ -26,9 +27,9 @@ def process(rows):
     # row is a dict of the row on which the step is applied
     # import pandas as pd
     # df = pd.DataFrame(rows)
-    logging.info("======================== about to reference pandas ==============================")
+    logger.info("======================== about to reference pandas ==============================")
     df = pandas.DataFrame(rows)
-    logging.info("======================== past pandas reference ==============================")
+    logger.info("======================== past pandas reference ==============================")
 
     df_output = df.drop(find_empty_columns(df), axis=1)
 
