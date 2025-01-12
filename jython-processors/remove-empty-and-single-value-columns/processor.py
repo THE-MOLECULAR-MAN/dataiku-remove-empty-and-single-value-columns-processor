@@ -1,10 +1,5 @@
 # This file is the actual code for the custom Jython step remove-empty-and-single-value-columns
 
-import pandas as pd
-
-def find_empty_columns(df):
-    """x"""
-    return [col for col in df.columns if df[col].isnull().all()]
 
 
 # global- and project-level variables are passed as a dss_variables dict
@@ -13,6 +8,14 @@ def find_empty_columns(df):
 
 # Define here a function that returns the result of the step.
 def process(rows):
+
+    import pandas as pd
+
+    def find_empty_columns(df):
+        """x"""
+        return [col for col in df.columns if df[col].isnull().all()]
+
+    
     # row is a dict of the row on which the step is applied
     
     df = pd.DataFrame(rows)
