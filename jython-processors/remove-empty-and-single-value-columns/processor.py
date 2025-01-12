@@ -22,9 +22,9 @@ remove_columns_with_only_one_value = params.get('remove_columns_with_only_one_va
 def process(rows):
     logger.info("======================== process start ==============================")
 
-    def find_empty_columns(df):
-        """x"""
-        return [col for col in df.columns if df[col].isnull().all()]
+#     def find_empty_columns(df):
+#         """x"""
+#         return [col for col in df.columns if df[col].isnull().all()]
     
     # row is a dict of the row on which the step is applied
     # import pandas as pd
