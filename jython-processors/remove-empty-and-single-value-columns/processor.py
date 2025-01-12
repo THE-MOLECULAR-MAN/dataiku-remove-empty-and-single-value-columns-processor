@@ -14,7 +14,6 @@ def process(rows):
     def find_empty_columns(df):
         """x"""
         return [col for col in df.columns if df[col].isnull().all()]
-
     
     # row is a dict of the row on which the step is applied
     
