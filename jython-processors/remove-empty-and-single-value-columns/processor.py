@@ -11,7 +11,7 @@ remove_empty_columns               = params.get('remove_empty_columns')
 remove_columns_with_only_one_value = params.get('remove_columns_with_only_one_value')
 
 logger.info("======================== about to import pandas ==============================")
-import pandas
+import pandas as pd
 logger.info("======================== finished importing pandas ==============================")
 
 # global- and project-level variables are passed as a dss_variables dict
@@ -30,7 +30,7 @@ def process(rows):
     import pandas as pd
     df = pd.DataFrame(rows)
     logger.info("======================== about to reference pandas ==============================")
-    df = pandas.DataFrame(rows)
+    df = pd.DataFrame(rows)
     logger.info("======================== past pandas reference ==============================")
 
     df_output = df.drop(find_empty_columns(df), axis=1)
