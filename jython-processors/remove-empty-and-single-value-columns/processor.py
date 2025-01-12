@@ -7,14 +7,13 @@
 # Define here a function that returns the result of the step.
 def process(rows):
 
-    import pandas as pd
-
     def find_empty_columns(df):
         """x"""
         return [col for col in df.columns if df[col].isnull().all()]
+
     
     # row is a dict of the row on which the step is applied
-    
+    import pandas as pd
     df = pd.DataFrame(rows)
 
     df_output = df.drop(find_empty_columns(df), axis=1)
