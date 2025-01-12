@@ -1,7 +1,5 @@
 # This file is the actual code for the custom Jython step remove-empty-and-single-value-columns
 
-
-
 # global- and project-level variables are passed as a dss_variables dict
 
 # the step parameters are passed as a params dict
