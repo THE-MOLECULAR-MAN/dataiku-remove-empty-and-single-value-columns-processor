@@ -10,7 +10,9 @@ logging.basicConfig(level=logging.INFO,
 remove_empty_columns               = params.get('remove_empty_columns')
 remove_columns_with_only_one_value = params.get('remove_columns_with_only_one_value')
 
+logger.info("======================== about to import pandas ==============================")
 import pandas
+logger.info("======================== finished importing pandas ==============================")
 
 # global- and project-level variables are passed as a dss_variables dict
 
