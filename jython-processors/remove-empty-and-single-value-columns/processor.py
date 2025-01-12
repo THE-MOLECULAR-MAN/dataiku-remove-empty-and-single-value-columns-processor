@@ -13,7 +13,8 @@ def process(rows):
     
     # row is a dict of the row on which the step is applied
     # import pandas as pd
-    df = pd.DataFrame(rows)
+    # df = pd.DataFrame(rows)
+    df = pandas.DataFrame(rows)
 
     df_output = df.drop(find_empty_columns(df), axis=1)
 
