@@ -9,7 +9,7 @@ import logging
 
 # Define here a function that returns the result of the step.
 def process(rows):
-    print("======================== process start ==============================")
+    logging.info("======================== process start ==============================")
 
     def find_empty_columns(df):
         """x"""
@@ -18,9 +18,9 @@ def process(rows):
     # row is a dict of the row on which the step is applied
     # import pandas as pd
     # df = pd.DataFrame(rows)
-    print("======================== about to reference pandas ==============================")
+    logging.info("======================== about to reference pandas ==============================")
     df = pandas.DataFrame(rows)
-    print("======================== past pandas reference ==============================")
+    logging.info("======================== past pandas reference ==============================")
 
     df_output = df.drop(find_empty_columns(df), axis=1)
 
