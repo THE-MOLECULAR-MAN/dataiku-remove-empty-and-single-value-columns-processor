@@ -34,7 +34,7 @@ unit-tests:
                 pytest -o junit_family=xunit2 --junitxml=unit.xml tests/python/unit || true; \
 		deactivate; \
 	)
-	@echo "[SUCCESS] Running unit tests: Done!"
+    @echo "[SUCCESS] Running unit tests: Done!"
     
     
 integration-tests:
