@@ -26,8 +26,6 @@ def process(rows):
         return [col for col in df.columns if df[col].isnull().all()]
     
     row is a dict of the row on which the step is applied
-    import pandas as pd
-    df = pd.DataFrame(rows)
     logger.info("======================== about to reference pandas ==============================")
     df = pd.DataFrame(rows)
     logger.info("======================== past pandas reference ==============================")
