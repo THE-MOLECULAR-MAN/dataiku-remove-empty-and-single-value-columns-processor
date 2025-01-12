@@ -1,6 +1,7 @@
 # This file is the actual code for the custom Jython step remove-empty-and-single-value-columns
 
 import logging
+import pandas
 
 logger = logging.getLogger(__name__)
 logging.basicConfig(level=logging.INFO,
