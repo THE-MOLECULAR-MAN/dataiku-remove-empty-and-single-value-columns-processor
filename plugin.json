@@ -3,7 +3,7 @@
     "id": "remove-empty-and-single-value-columns-processor",
 
     // It is highly recommended to use Semantic Versioning
-    "version": "0.1.1",
+    "version": "0.1.0",
 
     // Meta data for display purposes:
     "meta": {
