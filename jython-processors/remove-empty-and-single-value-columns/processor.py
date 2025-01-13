@@ -13,7 +13,6 @@ remove_columns_with_only_one_value = params.get('remove_columns_with_only_one_va
 # next line causes issue
 import pandas as pd
 
-
 # global- and project-level variables are passed as a dss_variables dict
 # the step parameters are passed as a params dict
 
