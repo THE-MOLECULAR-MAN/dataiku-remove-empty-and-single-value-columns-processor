@@ -9,26 +9,20 @@ logging.basicConfig(level=logging.INFO,
 remove_empty_columns               = params.get('remove_empty_columns')
 remove_columns_with_only_one_value = params.get('remove_columns_with_only_one_value')
 
-logger.info("======================== about to import pandas ==============================")
 import pandas as pd
-logger.info("======================== finished importing pandas ==============================")
+
 
 # global- and project-level variables are passed as a dss_variables dict
-
 # the step parameters are passed as a params dict
 
 # Define here a function that returns the result of the step.
 def process(rows):
-    logger.info("======================== process start ==============================")
 
     def find_empty_columns(df):
         """x"""
         return [col for col in df.columns if df[col].isnull().all()]
     
-    logger.info("======================== about to reference pandas ==============================")
     df = pd.DataFrame(rows)
-    logger.info("======================== past pandas reference ==============================")
-
     df_output = df.drop(find_empty_columns(df), axis=1)
 
     for col in df_output:
