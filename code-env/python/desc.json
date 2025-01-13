@@ -8,6 +8,7 @@
     "PYTHON311"
   ],
   "corePackagesSet": "AUTO",
+  "_comment": "I have tried setting corePackagesSet to PANDAS10 and PANDAS13",
   "forceConda": false,
   "installCorePackages": true,
   "installJupyterSupport": false
