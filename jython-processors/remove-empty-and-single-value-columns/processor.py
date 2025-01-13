@@ -9,6 +9,8 @@ logging.basicConfig(level=logging.INFO,
 remove_empty_columns               = params.get('remove_empty_columns')
 remove_columns_with_only_one_value = params.get('remove_columns_with_only_one_value')
 
+
+# next line causes issue
 import pandas as pd
 
 
